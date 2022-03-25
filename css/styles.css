@@ -1,0 +1,51 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body,
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+.country__details {
+  line-height: 1.5;
+}
+
+.country__official__name {
+  font-size: 1.2rem;
+  font-weight: bolder;
+  color: #f88120;
+}
+
+.region,
+.capital,
+.independence__status,
+.population {
+  line-height: 1.5;
+  font-size: 1.2rem;
+}
+
+img.court_of_arms {
+  width: 10%;
+  height: 10%;
+}
+
+.countries__container {
+  margin: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.country {
+  -webkit-box-flex: 25%;
+      -ms-flex: 25%;
+          flex: 25%;
+}
