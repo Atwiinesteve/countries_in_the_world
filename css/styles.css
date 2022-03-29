@@ -18,6 +18,7 @@ html {
   font-size: 1.2rem;
   font-weight: bolder;
   color: #f88120;
+  margin-top: 1.5rem;
 }
 
 .region,
@@ -29,23 +30,28 @@ html {
 }
 
 img.court_of_arms {
-  width: 10%;
-  height: 10%;
+  width: 50%;
+  height: 40%;
 }
 
 .countries__container {
   margin: 2rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .country {
-  -webkit-box-flex: 25%;
-      -ms-flex: 25%;
-          flex: 25%;
+  padding: 1.3rem;
+  -webkit-box-shadow: 5px 11px 20px 1px rgba(27, 25, 25, 0.45);
+          box-shadow: 5px 11px 20px 1px rgba(27, 25, 25, 0.45);
+}
+
+.align-center {
+  text-align: center;
 }

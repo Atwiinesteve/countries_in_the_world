@@ -1,43 +1,54 @@
 * {
-        padding: 0px;
-        margin: 0px;
-        box-sizing: border-box;
-      }
-      
-      body,
-      html {
-        font-family: "Roboto", sans-serif;
-      }
-      
-      .country__details {
-              line-height: 1.5;
-      }
-      
-      .country__official__name {
-              font-size: 1.2rem;
-              font-weight: bolder;
-              color: rgb(248, 129, 32);
-      }
-      
-      .region,
-      .capital,
-      .independence__status,
-      .population {
-              line-height: 1.5;
-              font-size: 1.2rem;
-      }
-      
-      img.court_of_arms {
-              width: 10%;
-              height: 10%;
-      }
-      
-      .countries__container {
-              margin: 2rem;
-              display: flex;
-              flex-direction: column;
-      }
-      
-      .country {
-              flex: 25%;
-      }
+padding: 0px;
+margin: 0px;
+box-sizing: border-box;
+}
+
+body,
+html {
+font-family: "Roboto", sans-serif;
+}
+
+.country__details {
+        line-height: 1.5;
+}
+
+.country__official__name {
+        font-size: 1.2rem;
+        font-weight: bolder;
+        color: rgb(248, 129, 32);
+        margin-top: 1.5rem;
+}
+
+.region,
+.capital,
+.independence__status,
+.population {
+        line-height: 1.5;
+        font-size: 1.2rem;
+}
+
+img.court_of_arms {
+        width: 50%;
+        height: 40%;
+}
+
+.countries__container {
+        margin: 2rem;
+        -ms-display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-gap: 20px;
+        align-items: center;
+        // text-align: center;
+}
+
+.country {
+        padding: 1.3rem;
+        box-shadow: 5px 11px 20px 1px rgba(27, 25, 25, 0.45);
+}
+
+.align-center {
+        text-align: center;
+}
