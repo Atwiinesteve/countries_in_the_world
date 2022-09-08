@@ -58,8 +58,18 @@ img.court_of_arms {
                 .country__flag {
                         text-align: center;
                         align-items: center;
-                        img {
-                                object-fit: contain;
+                        display: grid;
+                        grid-template-columns: repeat(auto-fit, minmax(1rem, 2fr));
+                        grid-gap: 2px;
+
+                        .flag {
+                                width: 100%;
+                                object-fit: contain;    
+                        }
+                        
+                        .court_of_arms {
+                                width: 100%;
+                                object-fit: contain;   
                         }
                 }
                 .country__details {
