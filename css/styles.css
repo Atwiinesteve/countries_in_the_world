@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap");
 * {
   padding: 0px;
   margin: 0px;
@@ -7,7 +8,7 @@
 
 body,
 html {
-  font-family: "Roboto", sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
 
 .country__details {
@@ -17,7 +18,7 @@ html {
 .country__official__name {
   font-size: 1.2rem;
   font-weight: bolder;
-  color: #f88120;
+  color: rgb(248, 129, 32);
   margin-top: 1.5rem;
 }
 
@@ -45,11 +46,57 @@ img.court_of_arms {
       -ms-flex-align: center;
           align-items: center;
 }
+.countries__container .country {
+  background: #fff;
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+  padding: 1rem;
+}
+.countries__container .country:hover {
+  -webkit-box-shadow: 3px 11px 18px 1px rgba(43, 43, 43, 0.45);
+          box-shadow: 3px 11px 18px 1px rgba(43, 43, 43, 0.45);
+  cursor: pointer;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  z-index: 10;
+}
+.countries__container .country .country__flag {
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.countries__container .country .country__flag img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.countries__container .country .country__details .country__official__name {
+  font-size: 1.2rem;
+}
+.countries__container .country .country__details .region,
+.countries__container .country .country__details .capital,
+.countries__container .country .country__details .independence__status,
+.countries__container .country .country__details .population {
+  font-size: 1rem;
+}
+.countries__container .country .country__details .map {
+  margin-top: 1rem;
+}
+.countries__container .country .country__details .map > a {
+  text-decoration: none;
+  padding: 0.4rem 0rem;
+  color: rgb(36, 140, 238);
+  outline: none;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+.countries__container .country .country__details .map > a:hover {
+  cursor: pointer;
+}
 
 .country {
-  padding: 1.3rem;
-  -webkit-box-shadow: 5px 11px 20px 1px rgba(27, 25, 25, 0.45);
-          box-shadow: 5px 11px 20px 1px rgba(27, 25, 25, 0.45);
+  -webkit-box-shadow: 3px 11px 18px 1px rgba(190, 190, 190, 0.45);
+          box-shadow: 3px 11px 18px 1px rgba(190, 190, 190, 0.45);
 }
 
 .align-center {

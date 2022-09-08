@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
+
 * {
 padding: 0px;
 margin: 0px;
@@ -6,7 +8,7 @@ box-sizing: border-box;
 
 body,
 html {
-font-family: "Roboto", sans-serif;
+font-family: "Quicksand", sans-serif;
 }
 
 .country__details {
@@ -42,11 +44,56 @@ img.court_of_arms {
         grid-gap: 20px;
         align-items: center;
         // text-align: center;
+
+        .country {
+                background: #fff;
+                transition: all 0.6s ease;
+                padding: 1rem;
+                &:hover {
+                        box-shadow: 3px 11px 18px 1px rgba(43, 43, 43, 0.45);
+                        cursor: pointer;
+                        transform: scale(1.1);
+                        z-index: 10;
+                }
+                .country__flag {
+                        text-align: center;
+                        align-items: center;
+                        img {
+                                object-fit: contain;
+                        }
+                }
+                .country__details {
+                        .country__official__name {
+                                font-size: 1.2rem;
+                        }
+                        .region,
+                        .capital,
+                        .independence__status,
+                        .population {
+                                font-size: 1rem;
+                        }
+                        .map {
+                                margin-top: 1rem;
+                        }
+                        .map > a {
+                                text-decoration: none;
+                                padding: 0.4rem 0rem;
+                                color: rgb(36, 140, 238);
+                                outline: none;
+                                text-transform: uppercase;
+                                font-weight: bolder;
+                                &:hover {
+                                        cursor: pointer;
+                                }
+                        }
+                }
+        }
+
+
 }
 
 .country {
-        padding: 1.3rem;
-        box-shadow: 5px 11px 20px 1px rgba(27, 25, 25, 0.45);
+        box-shadow: 3px 11px 18px 1px rgba(190, 190, 190, 0.45);
 }
 
 .align-center {
