@@ -65,8 +65,17 @@ img.court_of_arms {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(1rem, 2fr));
+  grid-gap: 2px;
 }
-.countries__container .country .country__flag img {
+.countries__container .country .country__flag .flag {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.countries__container .country .country__flag .court_of_arms {
+  width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
 }
